@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grupo BarbiesBooks</title>
+<link href="reset.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet"/>
+</link></head>
+<body>
+<header class="cabeçalho">
+<div class="container">
+<input class="container__botao" id="menu" type="checkbox"/>
+<label for="menu">
+<span class="cabeçalho__menu-hamburguer container__imagem"></span>
+</label>
+<ul class="lista-menu">
+<li class="lista-menu__titulo">Categorias</li>
+<li class="lista-menu__item">
+<a class="lista-menu__link" href="#">Programação</a>
+</li>
+<li class="lista-menu__item">
+<a class="lista-menu__link" href="#">Front-end</a>
+</li>
+<li class="lista-menu__item">
+<a class="lista-menu__link" href="#">Infraestrutura</a>
+</li>
+<li class="lista-menu__item">
+<a class="lista-menu__link" href="#">Business</a>
+</li>
+<li class="lista-menu__item">
+<a class="lista-menu__link" href="#">Design &amp; UX</a>
+</li>
+</ul>
+<img alt="Logo da Grupo Barbiesbooks" class="container__imagem" src="img/Logo.svg"/>
+</div>
+<div class="container">
+<a href="#"><img alt="Meus favoritos" class="container__imagem" src="img/Favoritos.svg"/></a>
+<a href="#"><img alt="Carrinhos de compras" class="container__imagem" src="img/Compras.svg"/></a>
+<a href="#"><img alt="Meu perfil" class="container__imagem" src="img/Usuario.svg"/></a>
+</div>
+</header>
+<section class="banner">
+<h2 class="banner__titulo">Já sabe por onde começar?</h2>
+<p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+<input class="banner__pesquisa" placeholder="Qual será sua próxima leitura?" type="search"/>
+</section>
+<section class="carrossel">
+<h2 class="carrossel__titulo">Novos lançamentos</h2>
+<!-- Slider main container -->
+<div class="swiper">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+<!-- Slides -->
+<div class="swiper-slide"><img alt="Livro sobre apache kafka e spring boot da alura books" src="img/Apachekafka.svg"/></div>
+<div class="swiper-slide"><img alt="Livro sobre liderança em design design da alura books" src="img/Liderança.svg"/></div>
+<div class="swiper-slide"><img alt="Livro sobre javascript assertivo da alura books" src="img/Javascript.svg"/>
+</div>
+<div class="swiper-slide">
+<img alt="Livro Guia front end" src="img/Guia Front-end.svg">
+</img></div>
+<div class="swiper-slide">
+<img alt="Livro sobre portugol" src="img/Portugol.svg">
+</img></div>
+<div class="swiper-slide">
+<img alt="Livro sobre acessibilidade" src="img/Acessibilidade.svg">
+</img></div>
+</div>
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+<div class="card">
+<div class="card__descrição">
+<div class="descrição">
+<h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+<h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+<p class="descrição__texto">
+            Construindo uma aplicação integrada com a plataforma do Google.
+          </p>
+</div>
+<img class="descrição__imagem" src="img/Angular.svg">
+</img></div>
+<div class="card__botões">
+<ul class="botões">
+<li class="botões__item">
+<img alt="Favoritar livro" src="img/Favoritos.svg">
+</img></li>
+<li class="botões__item">
+<img alt="Adicionar no carrinho de compras" src="img/Compras.svg">
+</img></li>
+</ul>
+<a class="botões__ancora" href="#">Saiba mais</a>
+</div>
+</div>
+</section>
+<section class="”carrossel”">
+<h2 class="carrossel__titulo">Mais vendidos</h2>
+<div class="swiper">
+<!-- Additional required wrapper -->
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
+<div class="swiper-wrapper">
+<!-- Slides -->
+<div class="swiper-slide"><img alt="Livro sobre apache kafka e spring boot da alura books" src="img/ApacheKafka.svg"/></div>
+<div class="swiper-slide"><img alt="Livro sobre liderança em design da alura books" src="img/Liderança.svg"/>
+</div>
+<div class="swiper-slide"><img alt="Livro sobre javascript assertivo da alurabooks" src="img/Javascript.svg"/>
+</div>
+<div class="swiper-slide"><img alt="Livro Guia front end" src="img/Guia Front-end.svg"/></div>
+<div class="swiper-slide"><img alt="Livro sobre portugol" src="img/Portugol.svg"/></div>
+<div class="swiper-slide"><img alt="livro sobre acessibilidade" src="img/Acessibilidade.svg"/></div>
+</div>
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+<div class="card">
+<!-- 1º linha -->
+<div class="card__descrição">
+<!-- 1º coluna -->
+<div class="descrição">
+<img alt="Avaliação 5 estrelas" src="img/Estrelinhas.svg"/>
+<h3 class="descrição__titulo">Autora do Mês</h3>
+<h2 class="descrição__titulo-livro">Juliana Agarikov</h2>
+<p class="descrição__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.
+          </p>
+</div>
+<!-- 2º coluna -->
+<img class="descrição__imagem" src="img/Escritora.svg"/>
+</div>
+<!-- 2º linha -->
+<div class="card__botões">
+<!-- 1º coluna -->
+<ul class="botões">
+<li class="botões__item"><img alt="Favoritar livro" src="img/Favoritos.svg"/></li>
+<li class="botões__item"><img alt="Adicionar no carrinho de compras" src="img/Compras.svg"/></li>
+</ul>
+<!-- 2º coluna -->
+<a class="botões__ancora" href="#">Saiba mais</a>
+</div>
+</div>
+</section>
+<section class="tópicos">
+<h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+<ul class="tópicos__lista">
+<li class="tópicos__item"><a class="tópicos__link" href="#">Android</a></li>
+<li class="tópicos__item">
+<a class="tópicos__link" href="#">Marketing Digital</a>
+</li>
+<li class="tópicos__item">
+<a class="tópicos__link" href="#">Agile</a>
+</li>
+<li class="tópicos__item">
+<a class="tópicos__link" href="#">Startups</a>
+</li>
+<li class="tópicos__item">
+<a class="tópicos__link" href="#">HTML &amp; CSS</a>
+</li>
+<li class="tópicos__item">
+<a class="tópicos__link" href="#">Python</a>
+</li>
+<li class="tópicos__item">
+<a class="tópicos__link" href="#">OO</a>
+</li>
+<li class="tópicos__item">
+<a class="tópicos__link" href="#">Java</a>
+</li>
+</ul>
+</section>
+<section class="contato">
+<h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+<p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+<input class="contato__email" placeholder="Cadastre seu e-mail" type="email">
+</input></section>
+<hr/>
+<footer class="rodapé">
+<h2 class="rodapé__titulo">Grupo Barbies</h2>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+</html>
